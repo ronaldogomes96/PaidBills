@@ -40,6 +40,7 @@ class FirebaseWorker: FirebaseServices {
         return db.collection("expenses").order(by: "date").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
+                completion([])
             } else {
                 let expensesDictionary = querySnapshot!.documents.map { expense -> Dictionary<String, Any> in
                     self.ids.append(expense.documentID)

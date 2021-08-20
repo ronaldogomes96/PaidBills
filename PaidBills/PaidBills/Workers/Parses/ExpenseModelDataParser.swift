@@ -31,7 +31,8 @@ struct ExpenseModelDataParser: DataParser {
                   let value = expenseDictionary["value"] as? Double,
                   let isPaid = expenseDictionary["isPaid"] as? Bool,
                   let dateObject = expenseDictionary["date"] as? Timestamp else {
-                fatalError()
+                listOfExpensesResponses = []
+                return
             }
 
             let expense = ExpensesResponse(name: name, value: value, isPaid: isPaid, date: dateObject.dateValue())

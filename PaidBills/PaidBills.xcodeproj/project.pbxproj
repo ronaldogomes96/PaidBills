@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		291040F2F49AAF85F1779BD5 /* Pods_PaidBillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29ADB6957C8D2D64CECA6957 /* Pods_PaidBillsTests.framework */; };
 		96267F915BE521167794E49B /* Pods_PaidBills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F7EC64C78D69637B836A46 /* Pods_PaidBills.framework */; };
+		D1526B5E26CFCB390028AF61 /* StringsDateConvertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B5D26CFCB390028AF61 /* StringsDateConvertsTests.swift */; };
+		D1526B6026CFE5840028AF61 /* ExpenseModelDataParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B5F26CFE5840028AF61 /* ExpenseModelDataParserTests.swift */; };
+		D1526B6226CFF99A0028AF61 /* ExpensesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B6126CFF99A0028AF61 /* ExpensesInteractorTests.swift */; };
+		D1526B6526CFFC740028AF61 /* ExpensesPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B6426CFFC740028AF61 /* ExpensesPresenterMock.swift */; };
+		D1526B6726CFFF3B0028AF61 /* FirebaseWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B6626CFFF3B0028AF61 /* FirebaseWorkerMock.swift */; };
+		D1526B6A26D000070028AF61 /* DictionaryCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B6926D000070028AF61 /* DictionaryCreationHelper.swift */; };
+		D1526B6C26D011520028AF61 /* ExpensesViewControllerInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B6B26D011520028AF61 /* ExpensesViewControllerInputMock.swift */; };
+		D1526B6E26D0125D0028AF61 /* ExpensesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B6D26D0125D0028AF61 /* ExpensesPresenterTests.swift */; };
+		D1526B7026D014830028AF61 /* ExpenseResponseCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B6F26D014830028AF61 /* ExpenseResponseCreationHelper.swift */; };
+		D1526B7626D037910028AF61 /* ExpenseInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B7526D037910028AF61 /* ExpenseInteractorMock.swift */; };
+		D1526B7826D038550028AF61 /* ExpenseInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B7726D038550028AF61 /* ExpenseInteractorTests.swift */; };
+		D1526B7A26D040ED0028AF61 /* ExpenseViewControllerInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B7926D040ED0028AF61 /* ExpenseViewControllerInputMock.swift */; };
+		D1526B7C26D041E20028AF61 /* ExpensePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1526B7B26D041E20028AF61 /* ExpensePresenterTests.swift */; };
 		D171EAEE26CB28EA00BC3473 /* Expenses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D171EAED26CB28EA00BC3473 /* Expenses.storyboard */; };
 		D171EAF326CB2E1200BC3473 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171EAF226CB2E1200BC3473 /* ExpensesViewController.swift */; };
 		D171EAF726CB319200BC3473 /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171EAF626CB319200BC3473 /* ExpenseCell.swift */; };
@@ -23,7 +36,6 @@
 		D189D65326CB1E7600591A50 /* InitialTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D189D65126CB1E7600591A50 /* InitialTabBar.storyboard */; };
 		D189D65526CB1E7700591A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D189D65426CB1E7700591A50 /* Assets.xcassets */; };
 		D189D65826CB1E7700591A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D189D65626CB1E7700591A50 /* LaunchScreen.storyboard */; };
-		D189D66326CB1E7700591A50 /* PaidBillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189D66226CB1E7700591A50 /* PaidBillsTests.swift */; };
 		D189D66E26CB1E7700591A50 /* PaidBillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189D66D26CB1E7700591A50 /* PaidBillsUITests.swift */; };
 		D18AF82826CC4FB000F806F5 /* Expense.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18AF82726CC4FB000F806F5 /* Expense.storyboard */; };
 		D18AF82C26CC7A3E00F806F5 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AF82B26CC7A3E00F806F5 /* ExpenseViewModel.swift */; };
@@ -62,6 +74,19 @@
 		48D0FB7237F0F4DF713E7C14 /* Pods-PaidBills-PaidBillsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaidBills-PaidBillsUITests.release.xcconfig"; path = "Target Support Files/Pods-PaidBills-PaidBillsUITests/Pods-PaidBills-PaidBillsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		881B46B1384E8E40022DAC9F /* Pods-PaidBillsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaidBillsTests.release.xcconfig"; path = "Target Support Files/Pods-PaidBillsTests/Pods-PaidBillsTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0611C80DD4AFF179EC81E56 /* Pods_PaidBills_PaidBillsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaidBills_PaidBillsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1526B5D26CFCB390028AF61 /* StringsDateConvertsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsDateConvertsTests.swift; sourceTree = "<group>"; };
+		D1526B5F26CFE5840028AF61 /* ExpenseModelDataParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModelDataParserTests.swift; sourceTree = "<group>"; };
+		D1526B6126CFF99A0028AF61 /* ExpensesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesInteractorTests.swift; sourceTree = "<group>"; };
+		D1526B6426CFFC740028AF61 /* ExpensesPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesPresenterMock.swift; sourceTree = "<group>"; };
+		D1526B6626CFFF3B0028AF61 /* FirebaseWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseWorkerMock.swift; sourceTree = "<group>"; };
+		D1526B6926D000070028AF61 /* DictionaryCreationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryCreationHelper.swift; sourceTree = "<group>"; };
+		D1526B6B26D011520028AF61 /* ExpensesViewControllerInputMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewControllerInputMock.swift; sourceTree = "<group>"; };
+		D1526B6D26D0125D0028AF61 /* ExpensesPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesPresenterTests.swift; sourceTree = "<group>"; };
+		D1526B6F26D014830028AF61 /* ExpenseResponseCreationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseResponseCreationHelper.swift; sourceTree = "<group>"; };
+		D1526B7526D037910028AF61 /* ExpenseInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseInteractorMock.swift; sourceTree = "<group>"; };
+		D1526B7726D038550028AF61 /* ExpenseInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseInteractorTests.swift; sourceTree = "<group>"; };
+		D1526B7926D040ED0028AF61 /* ExpenseViewControllerInputMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewControllerInputMock.swift; sourceTree = "<group>"; };
+		D1526B7B26D041E20028AF61 /* ExpensePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensePresenterTests.swift; sourceTree = "<group>"; };
 		D171EAED26CB28EA00BC3473 /* Expenses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Expenses.storyboard; sourceTree = "<group>"; };
 		D171EAF226CB2E1200BC3473 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		D171EAF626CB319200BC3473 /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
@@ -80,7 +105,6 @@
 		D189D65726CB1E7700591A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D189D65926CB1E7700591A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D189D65E26CB1E7700591A50 /* PaidBillsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaidBillsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D189D66226CB1E7700591A50 /* PaidBillsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidBillsTests.swift; sourceTree = "<group>"; };
 		D189D66426CB1E7700591A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D189D66926CB1E7700591A50 /* PaidBillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaidBillsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D189D66D26CB1E7700591A50 /* PaidBillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidBillsUITests.swift; sourceTree = "<group>"; };
@@ -151,6 +175,63 @@
 				29ADB6957C8D2D64CECA6957 /* Pods_PaidBillsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1526B6326CFFC4F0028AF61 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D1526B6426CFFC740028AF61 /* ExpensesPresenterMock.swift */,
+				D1526B6626CFFF3B0028AF61 /* FirebaseWorkerMock.swift */,
+				D1526B6B26D011520028AF61 /* ExpensesViewControllerInputMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		D1526B6826CFFFF50028AF61 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D1526B6926D000070028AF61 /* DictionaryCreationHelper.swift */,
+				D1526B6F26D014830028AF61 /* ExpenseResponseCreationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D1526B7126D0190B0028AF61 /* ListOfExpenses */ = {
+			isa = PBXGroup;
+			children = (
+				D1526B6326CFFC4F0028AF61 /* Mocks */,
+				D1526B6126CFF99A0028AF61 /* ExpensesInteractorTests.swift */,
+				D1526B6D26D0125D0028AF61 /* ExpensesPresenterTests.swift */,
+			);
+			path = ListOfExpenses;
+			sourceTree = "<group>";
+		};
+		D1526B7226D019190028AF61 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				D1526B5D26CFCB390028AF61 /* StringsDateConvertsTests.swift */,
+				D1526B5F26CFE5840028AF61 /* ExpenseModelDataParserTests.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		D1526B7326D019500028AF61 /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				D1526B7426D037840028AF61 /* Mocks */,
+				D1526B7726D038550028AF61 /* ExpenseInteractorTests.swift */,
+				D1526B7B26D041E20028AF61 /* ExpensePresenterTests.swift */,
+			);
+			path = Expense;
+			sourceTree = "<group>";
+		};
+		D1526B7426D037840028AF61 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D1526B7526D037910028AF61 /* ExpenseInteractorMock.swift */,
+				D1526B7926D040ED0028AF61 /* ExpenseViewControllerInputMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		D171EAE926CB275500BC3473 /* Shared */ = {
@@ -279,7 +360,10 @@
 		D189D66126CB1E7700591A50 /* PaidBillsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D189D66226CB1E7700591A50 /* PaidBillsTests.swift */,
+				D1526B6826CFFFF50028AF61 /* Helpers */,
+				D1526B7226D019190028AF61 /* Workers */,
+				D1526B7126D0190B0028AF61 /* ListOfExpenses */,
+				D1526B7326D019500028AF61 /* Expense */,
 				D189D66426CB1E7700591A50 /* Info.plist */,
 			);
 			path = PaidBillsTests;
@@ -478,6 +562,7 @@
 					};
 					D189D65D26CB1E7700591A50 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = D189D64726CB1E7600591A50;
 					};
 					D189D66826CB1E7700591A50 = {
@@ -670,7 +755,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D189D66326CB1E7700591A50 /* PaidBillsTests.swift in Sources */,
+				D1526B6726CFFF3B0028AF61 /* FirebaseWorkerMock.swift in Sources */,
+				D1526B5E26CFCB390028AF61 /* StringsDateConvertsTests.swift in Sources */,
+				D1526B6A26D000070028AF61 /* DictionaryCreationHelper.swift in Sources */,
+				D1526B7C26D041E20028AF61 /* ExpensePresenterTests.swift in Sources */,
+				D1526B6026CFE5840028AF61 /* ExpenseModelDataParserTests.swift in Sources */,
+				D1526B7A26D040ED0028AF61 /* ExpenseViewControllerInputMock.swift in Sources */,
+				D1526B6226CFF99A0028AF61 /* ExpensesInteractorTests.swift in Sources */,
+				D1526B6E26D0125D0028AF61 /* ExpensesPresenterTests.swift in Sources */,
+				D1526B7026D014830028AF61 /* ExpenseResponseCreationHelper.swift in Sources */,
+				D1526B7626D037910028AF61 /* ExpenseInteractorMock.swift in Sources */,
+				D1526B6526CFFC740028AF61 /* ExpensesPresenterMock.swift in Sources */,
+				D1526B7826D038550028AF61 /* ExpenseInteractorTests.swift in Sources */,
+				D1526B6C26D011520028AF61 /* ExpensesViewControllerInputMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,6 +978,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = PaidBillsTests/Info.plist;
@@ -892,6 +990,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldogomes.PaidBillsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaidBills.app/PaidBills";
@@ -904,6 +1003,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = PaidBillsTests/Info.plist;

@@ -24,9 +24,6 @@ class SignInViewController: UIViewController, SignInInput {
     }
     
     private func setupWorkflow() {
-        //let presenter = ExpensesPresenter()
-       // presenter.controller = self
-        //interactor = ExpensesInteractor(presenter: presenter)
         router = SignInRouter(controller: self)
     }
     

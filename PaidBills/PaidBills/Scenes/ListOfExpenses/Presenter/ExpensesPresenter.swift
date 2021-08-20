@@ -29,6 +29,4 @@ class ExpensesPresenter: ExpensesPresenterInput {
         
         controller?.updateViewWith(list: listOfExpensesViewModel, and: totalValue)
     }
-    
-    
 }
